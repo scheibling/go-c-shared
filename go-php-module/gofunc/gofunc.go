@@ -2,6 +2,10 @@ package gofunc
 
 import "fmt"
 
+// This class/module contains pure Go code, and will communicate with PHP via the interface
+// module. This can also be done in the same module if need be, but for clarity it is divided
+// into two separate modules here.
+
 // Receive a string from PHP and print it out
 func ReceiveString(s string) {
 	fmt.Println("[Go] Received string from PHP: ", s)
@@ -29,9 +33,8 @@ func SendException() *CdyneException {
 // Receive a more complex type from PHP and print it out
 func ReceiveComplex(c *CdyneParent) {
 	fmt.Printf("[Go] Received a struct from PHP: \r\n[Go] Example String: %s\r\n[Go] Example Int: %d\r\n[Go] Example Double: %f\r\n[Go] Example Boolean: %t\r\n", c.ExampleString, c.ExampleInt, c.ExampleDouble, c.ExampleBool)
-	fmt.Printf("[Go] Children: %v\r\n", c.Children)
 	for _, child := range c.Children {
-		fmt.Printf("\r\n[Go]    Child Key: %s has value %s", child.Key, child.Value)
+		fmt.Printf("[Go]    Child Key: \"%s\" has value \"%s\"\r\n", child.Key, child.Value)
 	}
 }
 

@@ -3,7 +3,8 @@ This repository contains a list of examples of how to build shared libraries wit
 
 ## Projects
 ### PHP Extension (PHP8.0++)
-Compiles a new PHP extension which send data back and forth between PHP and Golang. It contains some simple functions with arguments and some examples of more advanced types (WIP, some things are broken)
+Compiles a new PHP extension which send data back and forth between PHP and Golang. It contains some simple functions with arguments and some examples of more advanced types (WIP, some things are broken)<br/><br/>
+- [Hacking PHP](http://ld2009.scusa.lsu.edu/php/internals2.ze1.zendapi.html)
 
 #### Building and installing
 ```bash

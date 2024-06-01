@@ -1,5 +1,7 @@
 package gofunc
 
+// Define the go equivalents of the C classes defined in the interface class
+
 type CdyneException struct {
 	Code    int64
 	Message string
