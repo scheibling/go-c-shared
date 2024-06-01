@@ -18,6 +18,16 @@ make clean
 make
 
 # Install the extension (/usr/lib/php/**/cdyne.so and /usr/local/lib/libcdyne.so)
+make install
+
+# Run the test file
+make test
+
+# Uninstall the extension
+make uninstall
+
+# Cleanup build files
+make clean
 ```
 The extension is installed into the following folders:
 - /usr/lib/php/PHP_VERSION_FOLDER/cdyne.so (the PHP interface, C)
