@@ -112,7 +112,7 @@ func CdyneParentToGo(ccp *C.CdyneParent, gcp *gofunc.CdyneParent) {
 	fmt.Println("Received integer ", ccp.exampleBool)
 	fmt.Println("Parsing bool as ", gcp.ExampleBool)
 
-	if gcp.Children == nil {
+	if ccp.children == nil {
 		return
 	}
 

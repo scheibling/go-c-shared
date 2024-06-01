@@ -36,5 +36,3 @@ The extension is installed into the following folders:
 - PHP_INI_DIR/conf.d/99-cdyne.ini (PHP configuration file for loading the extension)
 - /etc/ld.so.conf.d/cdyne.conf (ldconfig configuration file for the shared library)
 
-#### Notes
-- The slice of CdyneParent does not include children when passed to Go from PHP
