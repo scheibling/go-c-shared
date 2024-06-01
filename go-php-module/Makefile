@@ -48,3 +48,7 @@ test:
 	@echo "Running the PHP test file"
 	php -d extension=cdyne.so php/cdyne-test.php
 	@echo "Done"
+
+
+.PHONY: cbtest
+cbtest: clean interface gcc install test

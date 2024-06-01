@@ -52,3 +52,4 @@ install: main.lo
 uninstall:
 	@echo "Uninstalling the library"
 	sudo rm -f $(PHP_EXTENSION_DIR)/$(PHP_EXTENSION_NAME).so
+

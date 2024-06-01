@@ -37,5 +37,4 @@ The extension is installed into the following folders:
 - /etc/ld.so.conf.d/cdyne.conf (ldconfig configuration file for the shared library)
 
 #### Notes
-- Booleans in the CdyneParent class are currently not passing as intended and are disabled
 - The slice of CdyneParent does not include children when passed to Go from PHP

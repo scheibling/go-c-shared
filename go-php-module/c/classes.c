@@ -94,7 +94,7 @@ void CdyneParentToC(zend_object* php, CdyneParent* cp) {
     cp->exampleString = Z_STRVAL(*pExString);
     cp->exampleInt = Z_LVAL(*pExInt);
     cp->exampleDouble = Z_DVAL(*pExDouble);
-    cp->exampleBool = 1;
+    cp->exampleBool = Z_TYPE(*pExBool) == IS_TRUE ? 1 : 0;
 
     uint32_t count = zend_array_count(Z_ARR_P(pChildren));
     cp->children = (CdyneChild*)malloc(sizeof(CdyneChild) * (count + 1));

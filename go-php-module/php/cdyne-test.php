@@ -23,6 +23,12 @@ $ctype = new Cdyne\CdyneParent("IsTrue", 1, 1.1, true, [
 ]);
 Cdyne\complex_to_go($ctype);
 
+$ctype = new Cdyne\CdyneParent("IsFalse", 1, 1.1, false, [
+    new Cdyne\CdyneChild("I am", "Child 1"),
+    new Cdyne\CdyneChild("I Am", "Child 2")
+]);
+Cdyne\complex_to_go($ctype);
+
 // Receive a complex type from the go function SendComplexType
 $ctype = Cdyne\complex_from_go();
 echo "\r\n\r\n[PHP] Complex type from Go: " . 
